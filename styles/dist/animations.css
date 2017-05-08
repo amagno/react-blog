@@ -1,0 +1,143 @@
+@-webkit-keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, -100%); } }
+
+@-moz-keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, -100%); } }
+
+@keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, -100%); } }
+
+@-webkit-keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, 100%); } }
+
+@-moz-keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, 100%); } }
+
+@keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, 100%); } }
+
+@-webkit-keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-100%, 0); } }
+
+@-moz-keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-100%, 0); } }
+
+@keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-100%, 0); } }
+
+@-webkit-keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(100%, 0); } }
+
+@-moz-keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(100%, 0); } }
+
+@keyframes $animation_name {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(100%, 0); } }
+
+@-webkit-keyframes $animation_name {
+  0% {
+    transform: translate(0, 100%); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-moz-keyframes $animation_name {
+  0% {
+    transform: translate(0, 100%); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes $animation_name {
+  0% {
+    transform: translate(0, 100%); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-webkit-keyframes $animation_name {
+  0% {
+    transform: translate(0, -100%); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-moz-keyframes $animation_name {
+  0% {
+    transform: translate(0, -100%); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes $animation_name {
+  0% {
+    transform: translate(0, -100%); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-webkit-keyframes $animation_name {
+  0% {
+    transform: translate(-100%, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-moz-keyframes $animation_name {
+  0% {
+    transform: translate(-100%, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes $animation_name {
+  0% {
+    transform: translate(-100%, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-webkit-keyframes $animation_name {
+  0% {
+    transform: translate(100%, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@-moz-keyframes $animation_name {
+  0% {
+    transform: translate(100%, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+@keyframes $animation_name {
+  0% {
+    transform: translate(100%, 0); }
+  100% {
+    transform: translate(0, 0); } }

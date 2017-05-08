@@ -1,0 +1,54 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #464545; }
+
+.footer-content {
+  height: 65px;
+  text-align: center; }
+
+.footer-content div a {
+  margin: 0;
+  color: white; }
+
+.footer-content div a span {
+  margin: 0;
+  line-height: 50px;
+  vertical-align: middle; }
+
+.col-footer {
+  margin-top: 5px; }
+
+.content {
+  margin-top: 50px; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px; }
+
+.logo {
+  height: 40px; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.fade-enter {
+  opacity: 0; }
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in; }
+
+.fade-leave {
+  opacity: 1; }
+
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in; }
