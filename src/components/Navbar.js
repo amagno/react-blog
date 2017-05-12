@@ -3,8 +3,21 @@ import {Navbar, Nav, Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import NavLinkRoute from './NavLinkRoute'
 
+
+
+const UserNavButtons = () => (
+  <Navbar.Form pullRight>
+    <Button>Login</Button>
+    &nbsp;&nbsp;
+    <Button bsStyle="info">Registre-se</Button>
+  </Navbar.Form>
+)
+const UserNavButtonsToggle = ({ show }) => {
+  return show ? <UserNavButtons /> : <div />
+} 
+
 const NavbarComponent = () => (
-  <Navbar collapseOnSelect fixedTop>
+  <Navbar fluid fixedTop>
     <Navbar.Header>
       <Navbar.Brand>
         <Link to="/">Alexandre Magno</Link>
@@ -18,13 +31,13 @@ const NavbarComponent = () => (
         <NavLinkRoute path="/palestra" icon="clone">Palestra</NavLinkRoute>
         <NavLinkRoute path="/about" icon="question-circle">Sobre</NavLinkRoute>
       </Nav>
-      <Navbar.Form pullRight>
-        <Button>Login</Button>
-        &nbsp;&nbsp;
-        <Button bsStyle="info">Registre-se</Button>
-      </Navbar.Form>
+      <UserNavButtonsToggle show={false} />
+
+
     </Navbar.Collapse>
   </Navbar>
 )
+
+
 
 export default NavbarComponent

@@ -16,13 +16,13 @@ const Footer = () => (
             <Grid>
                 <Row className="footer-content">
                     <Col xs={4} md={4} className="col-footer" style={{ borderLeft: '1px solid white' }}>
-                        <a href="#">
+                        <a href="https://github.com/amagno">
                             <span className='fa fa-github fa-2x'></span>
                             <spam className="hidden-xs hidden-sm">&nbsp;&nbsp;&nbsp;&nbsp;Github</spam>
                         </a>
                     </Col>
                     <Col xs={4} md={4} className="col-footer" style={{ borderLeft: '1px solid white', borderRight: '1px solid white'}}>
-                        <a href="#">
+                        <a href="https://facebook.github.io/react/">
                             <img src={reactLogo} className="App-logo" alt="logo"/>
                             <span className="hidden-xs hidden-sm">React.Js</span>
                         </a>

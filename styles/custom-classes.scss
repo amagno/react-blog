@@ -1,9 +1,9 @@
 @import "variables";
 
 .footer {
-    position: absolute;
+    margin-top: 100px;
     bottom: 0;
-    width: 100%;
+    position: static;
     background-color: $gray;
 }
 .footer-content {
@@ -25,7 +25,7 @@
 
 
 .content {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .App {
@@ -61,4 +61,13 @@
 .fade-leave.fade-leave-active {
   opacity: 0;
   transition: opacity 300ms ease-in;
+}
+
+.presentation-container {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+  position: absolute;
+  background-color: black;
 }
