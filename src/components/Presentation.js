@@ -40,6 +40,16 @@ import linuxGithubImage from '../linux.png'
 import lisenceGithubImage from '../lisenca.png'
 import repositoriesImage from '../repositorios.png'
 import languagesImage from '../linguagens.png'
+import reactblogImage from '../reactblog.png'
+import newRepositoryImage from '../newrepository.png'
+import repositoryNameImage from '../repositoryname.png'
+import createRepositoryImage from '../createrepository.png'
+import githubPagesLogoImage from '../cover-deploy-to-github-pages.png'
+import githubPagesRepositoryImage from '../githubpages.png'
+import createNewFileImage from '../createnewfile.png'
+import fileNameImage from '../filename.png'
+import commitImage from '../commit.png'
+import contentImage from '../conteudo.png'
 // Import image preloader util import preloader from
 // 'spectacle/lib/utils/preloader'; Import theme
 import createTheme from 'spectacle/lib/themes/default';
@@ -174,8 +184,10 @@ const Presentation = () => (
             <Heading size={4}>Faça o download em: <br /><a href="https://git-scm.com/downloads">git-scm.com/downloads</a></Heading>
         </Slide>
         <Slide transition={["spin"]}>
-        <Heading size={5}>Após instalado abra um terminal de comando (cmd.exe , bas, shz)</Heading>
-          <Terminal title="1. elijahm@elijahm: ~(zsh)" output={[
+        <Heading size={5}>Após instalado abra um terminal de comando (cmd.exe , bash, shz)</Heading>
+          <Terminal title="1. alexandre@alexandre: ~(zsh)" output={[
+              'git config --global user.name "Alexandre Magno Monteiro"',
+              "git config --global user.email amagnomonteiro@gmail.com",
               "cd <diretório-do-programa>",
               "git init",
               "Initialized empty Git repository in <diretório-do-programa>/.git/",
@@ -227,6 +239,10 @@ const Presentation = () => (
             <Image src={linuxGithubImage}  width={800} responsive style={{margin: '0 auto 100px auto'}}></Image>
             <a href="https://github.com/torvalds/linux">github.com/torvalds/linux</a>
         </Slide>
+        <Slide transition={["fade"]}> 
+            <Image src={reactblogImage}  width={800} responsive style={{margin: '0 auto 100px auto'}}></Image>
+            <a href="https://github.com/amagno/react-blog">github.com/amagno/react-blog</a>
+        </Slide>
 
         <Slide transition={["fade"]} bgColor="orange">
             <Heading size={4}>Open-source != Free-software = Open-source</Heading>
@@ -243,9 +259,83 @@ const Presentation = () => (
             <Heading size={6} textColor="primary">Linguagens populares.</Heading>
             <Image src={languagesImage} responsive style={{margin: '0 auto 100px auto'}}></Image>
         </Slide>
-        <Slide>
+        <Slide transition={["fade"]} >
+            <Heading>Importância deste conteúdo.</Heading>
         </Slide>
-        
+        <Slide transition={["fade"]} bgColor="tertiary">
+            <Text>
+                Agora que já sabemos o que é e o que existe dentro do Github vamos abordar breve explicação de como fazer o upload do condigo nele.
+            </Text>
+        </Slide>
+        <Slide transition={["fade"]}>
+            <Heading size={6}>Crie uma conta no <a href="https://github.com/">github.com</a></Heading>
+            <Heading size={6}>Crie um repositório conforme imagens:</Heading>
+            <Image src={newRepositoryImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
+            <Image src={repositoryNameImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
+            <Image src={createRepositoryImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
+        </Slide>
+        <Slide transition={["spin"]}>
+          <Heading size={5}>Seguindo os passos anteriores abra um terminal e digite os seguintes comandos:</Heading>
+          <Terminal title="1. alexandre@alexandre: ~(zsh)" output={[
+              "cd <diretório-do-programa>",
+              "git log",
+              <div>
+              <div style={{ color: 'yellow' }}>commit 82b0dc4192e56714d303415d4d5f2b8afeb7552b</div>
+              Author: Alexandre Magno Monteiro {'<amagnomonteiro@gmail.com.br>'} <br />
+              Date:   Fri May 12 15:59:03 2017 -0300 <br />
+              Meu primeiro commit
+              </div>,
+              "git remote add origin https://github.com/amagno/meu-primeiro-repositorio.git",
+              "git push -u origin master",
+              <div>
+             Username for 'https://github.com': amagno <br />
+             Counting objects: 3, done. <br />
+             Writing objects: 100% (3/3), 224 bytes | 0 bytes/s, done. <br />
+             Total 3 (delta 0), reused 0 (delta 0) <br />
+             To https://github.com/amagno/meu-primeiro-repositorio.git <br />
+             * [new branch]      master -> master <br />
+             Branch master set up to track remote branch master from origin.
+              </div>]}
+            />
+        </Slide>
+        <Slide transition={["fade"]}>
+           <Heading>Github Desktop</Heading>
+           <Heading size={4}>Interface pra quem não gosta do terminal download: <a href="https://desktop.github.com/">desktop.github.com</a></Heading>
+
+
+        </Slide>
+        <Slide transition={["fade"]}>
+            <Image src={githubPagesLogoImage} width={1000} responsive style={{margin: '0 auto 100px auto'}}></Image>
+        </Slide>
+        <Slide transition={["fade"]}>
+            <div className='embed-container'><iframe src='https://www.youtube.com/embed/2MsN8gpT6jY' frameborder='0' allowfullscreen></iframe></div>
+        </Slide>
+        <Slide transition={["fade"]}>
+            <Heading size={5}>Criando um repositório para página do Github Pages</Heading>
+            <Image src={githubPagesRepositoryImage} responsive style={{margin: '0 auto 100px auto'}}></Image>
+        </Slide>
+        <Slide transition={["fade"]}>
+            <Heading size={5}>Criando o arquivo index.html</Heading>
+            <Heading size={6} textColor="orange">Crie um novo aruivo conforme a imagem</Heading>
+            <Image src={createNewFileImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
+            <Heading size={6} textColor="orange">Nomeie pra index.html</Heading>
+            <Image src={fileNameImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
+        </Slide>
+        <Slide transition={["fade"]}>
+            <Heading size={6} textColor="orange">Conteúdo:</Heading>
+            <Image src={contentImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
+            <Heading size={6} textColor="orange">Commit</Heading>
+            <Image src={commitImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
+        </Slide>
+        <Slide transition={["fade"]}>
+            <List>
+            <Heading size={5} textColor="orange">Mais documentação: </Heading>
+                <ListItem><a href="https://github.com/jlord/git-it-electron">Git-it</a></ListItem>
+                <ListItem><a href="https://git-scm.com/book/pt-br/v2">Git-Book</a></ListItem>
+                <ListItem><a href="https://guides.github.com/activities/hello-world/">Github Guides</a></ListItem>
+                <ListItem><a href="https://help.github.com/">Github Help</a></ListItem>
+            </List>
+        </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
             <BlockQuote>
                 <Quote>Obrigado</Quote>
