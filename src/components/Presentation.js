@@ -246,7 +246,7 @@ const Presentation = () => (
 
         <Slide transition={["fade"]} bgColor="orange">
             <Heading size={4}>Open-source != Free-software = Open-source</Heading>
-            <Heading size={5}>Veja a lisença</Heading>
+            <Heading size={5}>Veja a licença</Heading>
         </Slide>
         <Slide transition={["fade"]}> 
             <Image src={lisenceGithubImage} responsive style={{margin: '0 auto 100px auto'}}></Image>
@@ -264,12 +264,12 @@ const Presentation = () => (
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
             <Text>
-                Agora que já sabemos o que é e o que existe dentro do Github vamos abordar breve explicação de como fazer o upload do condigo nele.
+                Agora que sabemos o que é, e o que existe dentro do Github, vamos abordar uma breve explicação de como fazer o upload do condigo nele.
             </Text>
         </Slide>
         <Slide transition={["fade"]}>
             <Heading size={6}>Crie uma conta no <a href="https://github.com/">github.com</a></Heading>
-            <Heading size={6}>Crie um repositório conforme imagens:</Heading>
+            <Heading size={6}>Crie um repositório conforme imagens <a href="https://github.com/new">github.com/new</a></Heading>
             <Image src={newRepositoryImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
             <Image src={repositoryNameImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
             <Image src={createRepositoryImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
@@ -298,14 +298,14 @@ const Presentation = () => (
               </div>]}
             />
         </Slide>
-        <Slide transition={["fade"]}>
+        <Slide transition={["fade"]} bgColor="quartenary">
            <Heading>Github Desktop</Heading>
-           <Heading size={4}>Interface pra quem não gosta do terminal download: <a href="https://desktop.github.com/">desktop.github.com</a></Heading>
+           <Heading size={4}> Pra quem não gosta do terminal, existem interfaces: <a href="https://desktop.github.com/">desktop.github.com</a></Heading>
 
 
         </Slide>
         <Slide transition={["fade"]}>
-            <Image src={githubPagesLogoImage} width={1000} responsive style={{margin: '0 auto 100px auto'}}></Image>
+            <Heading><b>Github</b> Pages</Heading>
         </Slide>
         <Slide transition={["fade"]}>
             <div className='embed-container'><iframe src='https://www.youtube.com/embed/2MsN8gpT6jY' frameborder='0' allowfullscreen></iframe></div>
@@ -316,7 +316,7 @@ const Presentation = () => (
         </Slide>
         <Slide transition={["fade"]}>
             <Heading size={5}>Criando o arquivo index.html</Heading>
-            <Heading size={6} textColor="orange">Crie um novo aruivo conforme a imagem</Heading>
+            <Heading size={6} textColor="orange">Crie um novo arquivo conforme a imagem</Heading>
             <Image src={createNewFileImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
             <Heading size={6} textColor="orange">Nomeie pra index.html</Heading>
             <Image src={fileNameImage} responsive style={{margin: '10px auto', border: '2px solid', borderColor: '#0CE3AC', padding: '10px'}}></Image>
@@ -341,7 +341,7 @@ const Presentation = () => (
                 <Quote>Obrigado</Quote>
                 <Cite>Alexandre Magno Monteiro</Cite>
             </BlockQuote>
-            <div style={{ padding: '30px', textAlign: 'center' }}>
+            <div style={{ padding: '30px', textAlign: 'center', marginTop: '50px' }}>
             <Link to="/palestra">Clique para voltar para o site</Link>
             </div>
         </Slide>
