@@ -83,7 +83,7 @@ const Presentation = () => (
             <Image src={gitGithubLogo} responsive/>
         </Slide>
         <Slide bgColor="green" transition={["fade"]}>
-        <Heading size={3}>Quem programa ou pretende programar ?
+        <Heading size={3}>Começando uma vida de programador . . .
         </Heading>
         <Image src={programmerImage} responsive style={{ margin: '20px auto' }}></Image>
         </Slide>

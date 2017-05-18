@@ -48,7 +48,7 @@ export const PalestraView = () => (
             
         <ListGroup style={{ fontSize: '26px', textAlign: 'center' }}>
             <ListGroupItem>Introdução</ListGroupItem>
-            <ListGroupItem>Quem programa ou pretende programar ?</ListGroupItem>
+            <ListGroupItem>Vida de programador</ListGroupItem>
             <ListGroupItem>De que forma guarda esses programas ?</ListGroupItem>
             <ListGroupItem>Um programa que tenha dois ou mais desenvolvedores</ListGroupItem>
             <ListGroupItem>Sistemas de Controle de Versão</ListGroupItem>
