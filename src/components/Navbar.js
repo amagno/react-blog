@@ -1,8 +1,6 @@
 import React from 'react'
 import {Navbar, Nav, Button} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
 import NavLinkRoute from './NavLinkRoute'
-
 
 
 const UserNavButtons = () => (
@@ -14,26 +12,23 @@ const UserNavButtons = () => (
 )
 const UserNavButtonsToggle = ({ show }) => {
   return show ? <UserNavButtons /> : <div />
-} 
+}
 
-const NavbarComponent = () => (
-  <Navbar fluid fixedTop>
+const NavbarComponent = ({ ...props }) => (
+  <Navbar fluid className={props.className} fixedTop>
     <Navbar.Header>
       <Navbar.Brand>
-        <Link to="/">Alexandre Magno</Link>
       </Navbar.Brand>
       <Navbar.Toggle/>
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-        <NavLinkRoute path="/" icon="home">Home</NavLinkRoute>
-        <NavLinkRoute path="/posts" icon="bookmark">Posts</NavLinkRoute>
-        <NavLinkRoute path="/palestra" icon="clone">Palestra</NavLinkRoute>
-        <NavLinkRoute path="/about" icon="question-circle">Sobre</NavLinkRoute>
+        <NavLinkRoute path="/" icon="home">{!props.affix ? ' Home' : false}</NavLinkRoute>
+        <NavLinkRoute path="/posts" icon="bookmark">{!props.affix ? ' Posts' : false}</NavLinkRoute>
+        <NavLinkRoute path="/palestra" icon="clone">{!props.affix ? ' Palestra' : false}</NavLinkRoute>
+        <NavLinkRoute path="/about" icon="question-circle">{!props.affix ? ' Sobre' : false}</NavLinkRoute>
       </Nav>
       <UserNavButtonsToggle show={false} />
-
-
     </Navbar.Collapse>
   </Navbar>
 )

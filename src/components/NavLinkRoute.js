@@ -13,7 +13,7 @@ const NavLinkIcon = ({ name }) => (
 )
 const NavLinkGenerator = ({ ...props }) => (
     <NavItem onClick={() => handleLink(props.path, props.history)} active={isActive(props.path, props.location.pathname)}>
-    <NavLinkIcon name={props.icon} />&nbsp;{ props.children }
+    {props.icon ? <NavLinkIcon name={props.icon}/>: false}{ props.children }
     </NavItem>
 )
 

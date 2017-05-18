@@ -10,11 +10,10 @@ import {
     Quote,
     Slide,
     Text,
-    // Image
 } from 'spectacle'
 import Terminal from 'spectacle-terminal'
 import { Image } from 'react-bootstrap'
-
+//IMAGES
 import exampleImage1 from '../737px-Equipe_A.svg.png'
 import exampleImage2 from '../632px-Equipe_B.svg.png'
 import exampleImage3 from '../737px-Equipe_C.svg.png'
@@ -29,7 +28,6 @@ import bigClassDiragramImage from '../big-class-diagram-without-beans1.png'
 import programmerImage from '../crazy-work-guy-o.gif'
 import remoteRepositoryImage from '../02-setup-git-standard.png'
 import githubImage from '../github.jpg'
-//import gitBranches from '../git_branches.png'
 import gitGithubLogo from '../gitgithub.jpg'
 import gitLogo from '../Git-logo.svg.png'
 import linusImage from '../linus_torvalds.jpg'
@@ -44,16 +42,14 @@ import reactblogImage from '../reactblog.png'
 import newRepositoryImage from '../newrepository.png'
 import repositoryNameImage from '../repositoryname.png'
 import createRepositoryImage from '../createrepository.png'
-import githubPagesLogoImage from '../cover-deploy-to-github-pages.png'
 import githubPagesRepositoryImage from '../githubpages.png'
 import createNewFileImage from '../createnewfile.png'
 import fileNameImage from '../filename.png'
 import commitImage from '../commit.png'
 import contentImage from '../conteudo.png'
-// Import image preloader util import preloader from
-// 'spectacle/lib/utils/preloader'; Import theme
+import oodoImage from '../oodo.png'
 import createTheme from 'spectacle/lib/themes/default';
-
+//CSS
 import 'spectacle/lib/themes/default/index.css';
 
 const theme = createTheme({
@@ -67,7 +63,7 @@ const theme = createTheme({
 }, {
     primary: "Lato",
     secondary: "Arial"
-});
+})
 
 const iconStyle = {
     margin: '15px',
@@ -240,10 +236,22 @@ const Presentation = () => (
             <a href="https://github.com/torvalds/linux">github.com/torvalds/linux</a>
         </Slide>
         <Slide transition={["fade"]}> 
+            <Image src={oodoImage}  width={800} responsive style={{margin: '0 auto 100px auto'}}></Image>
+            <a href="https://github.com/odoo/odoo">github.com/odoo/odoo</a>
+        </Slide>
+        <Slide transition={["fade"]}> 
             <Image src={reactblogImage}  width={800} responsive style={{margin: '0 auto 100px auto'}}></Image>
             <a href="https://github.com/amagno/react-blog">github.com/amagno/react-blog</a>
         </Slide>
-
+         <Slide transition={["fade"]}> 
+            <Heading size={4}>As bibliotecas usadas para construir este site</Heading>
+            <List>
+                <ListItem style={{ fontSize: '28px' }}>Facebook React <a href="https://github.com/facebook/react">github.com/facebook/react</a></ListItem>
+                <ListItem style={{ fontSize: '28px' }}>Bootstrap <a href="https://github.com/twbs/bootstrap">github.com/twbs/bootstrap</a></ListItem>
+                <ListItem style={{ fontSize: '28px' }}>Font-Awesome <a href="https://github.com/FortAwesome/Font-Awesome">github.com/FortAwesome/Font-Awesome</a></ListItem>
+                <ListItem style={{ fontSize: '28px' }}>Slides: Formidable Spectacle <a href="https://github.com/FormidableLabs/spectacle">github.com/FormidableLabs/spectacle</a></ListItem>
+            </List>
+        </Slide>
         <Slide transition={["fade"]} bgColor="orange">
             <Heading size={4}>Open-source != Free-software = Open-source</Heading>
             <Heading size={5}>Veja a licença</Heading>
@@ -301,8 +309,6 @@ const Presentation = () => (
         <Slide transition={["fade"]} bgColor="quartenary">
            <Heading>Github Desktop</Heading>
            <Heading size={4}> Pra quem não gosta do terminal, existem interfaces: <a href="https://desktop.github.com/">desktop.github.com</a></Heading>
-
-
         </Slide>
         <Slide transition={["fade"]}>
             <Heading><b>Github</b> Pages</Heading>
@@ -337,6 +343,9 @@ const Presentation = () => (
             </List>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+            <Heading>Acesse: <a href="https://amagno.github.io/palestra">amagno.github.io</a> para rever os slides</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
             <BlockQuote>
                 <Quote>Obrigado</Quote>
                 <Cite>Alexandre Magno Monteiro</Cite>
@@ -345,8 +354,6 @@ const Presentation = () => (
             <Link to="/palestra">Clique para voltar para o site</Link>
             </div>
         </Slide>
-        
-        
     </Deck>
 )
 

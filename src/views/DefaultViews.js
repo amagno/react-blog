@@ -1,11 +1,11 @@
 import React from 'react'
-import {Jumbotron, Well, ListGroup, ListGroupItem, Button, HelpBlock} from 'react-bootstrap'
-import {Link} from 'react-router-dom'
+import {Jumbotron, Well, ListGroup, ListGroupItem, Button} from 'react-bootstrap'
 
 export const HomeView = () => (
     <Jumbotron>
         <h1>Site em construção....</h1>
-        <p>Utilizaçãdo React.Js com Github Pages </p>
+        <p>Utilizando React, React-Router, Bootstrap v3, Bootswatch Themes, React-Bootstrap no Github Pages </p>
+        <p>Obrigado a <a href="https://github.com/rafrex/spa-github-pages">github.com/rafrex/spa-github-pages</a> por criar método eficaz para implementar aplicativos com React no Github Pages</p>
     </Jumbotron>
 )
 export const PostsView = () => (
@@ -41,14 +41,14 @@ export const PalestraView = () => (
         <h1 style={{ textAlign: 'center' }}>Palestra Git & Github</h1>
         <div style={{ textAlign: 'center', backgroundColor: '#375A7F', padding: '20px' }}>
         <h4>
-            Está palestra tem como objetivo explicar como funciona o Sistemas de controle de versão abordando
+            Esta palestra tem como objetivo explicar como funciona o Sistemas de controle de versão abordando,
             Git e Github e sua utilidade no dia a dia de um programador.
         </h4>
         </div>
             
         <ListGroup style={{ fontSize: '26px', textAlign: 'center' }}>
             <ListGroupItem>Introdução</ListGroupItem>
-            <ListGroupItem>Quem programa ou pretende programar</ListGroupItem>
+            <ListGroupItem>Quem programa ou pretende programar ?</ListGroupItem>
             <ListGroupItem>De que forma guarda esses programas ?</ListGroupItem>
             <ListGroupItem>Um programa que tenha dois ou mais desenvolvedores</ListGroupItem>
             <ListGroupItem>Sistemas de Controle de Versão</ListGroupItem>
@@ -67,7 +67,7 @@ export const PalestraView = () => (
             <ListGroupItem>A importâcia deste conteúdo para um programador</ListGroupItem>
             <ListGroupItem>Utilizando o Github</ListGroupItem>
             <ListGroupItem>Github Pages</ListGroupItem>
-            <ListGroupItem>Criando uma pagina no Github Pages</ListGroupItem>
+            <ListGroupItem>Criando uma página no Github Pages</ListGroupItem>
             <ListGroupItem>Guias e Tutoriais sobre Git & Github</ListGroupItem>
             <ListGroupItem>Conclusão</ListGroupItem>
         </ListGroup>

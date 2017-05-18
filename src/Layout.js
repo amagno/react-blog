@@ -1,9 +1,9 @@
 import React from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
 import reactLogo from './logo.svg'
-import Navbar from './components/Navbar'
+import NavbarAffix from './components/NavbarAffix'
 
-const Header = () => (<Navbar/>)
+const Header = () => (<NavbarAffix offset={100}/>)
 
 const Content = ({children}) => (
     <div className='container content'>
@@ -28,7 +28,7 @@ const Footer = () => (
                         </a>
                     </Col>
                     <Col xs={4} md={4} className="col-footer" style={{ borderRight: '1px solid white'}}>
-                        <a href="#">
+                        <a href="https://plus.google.com/u/0/113863440714050500920">
                             <span className='fa fa-google-plus fa-2x'></span>
                             <span className="hidden-xs hidden-sm">&nbsp;&nbsp;&nbsp;&nbsp;Google+</span>
                         </a>
