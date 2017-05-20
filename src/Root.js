@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 import * as View from './views/DefaultViews'
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
-import Presentation from './components/Presentation'
+import Presentation from './views/presentation/Presentation'
 
 const RouteAnimated = ({ trasintionName, ...rest }) => (
     <Route render={({ location }) => (
@@ -20,16 +20,17 @@ const PresentationContainer = () => (
         <Presentation />
     </div>
 )
-const Root = () => (
+const Root = ({ ...props }) => (
     <Router>
     <div>
-        <Route path="/presentation" component={PresentationContainer} />
         <Layout>
+        {console.log(props)}
         <RouteAnimated trasintionName="fade" exact path="/" component={View.HomeView} />
         <RouteAnimated trasintionName="fade" path="/posts" component={View.PostsView} />
         <RouteAnimated trasintionName="fade" path="/about" component={View.AboutView} />
         <RouteAnimated trasintionName="fade" path="/palestra" component={View.PalestraView} />
         </Layout>
+        <Route path="/palestra/presentation" component={PresentationContainer} />
     </div>
     </Router>
 );

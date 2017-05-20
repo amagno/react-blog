@@ -93,7 +93,7 @@ export const PalestraView = () => (
                 <li>WOHLER, B. Unix — Frequently Asked Questions (7/7). [s.l: s.n.].</li> 
             </ul>
         </blockquote>
-        <Button href="/presentation" bsStyle="success" bsSize="large" block>Iniciar apresentação</Button>
+        <Button href="/palestra/presentation" bsStyle="success" bsSize="large" block>Iniciar apresentação</Button>
         </ Well>
 )
 export const AboutView = () => (

@@ -16,11 +16,6 @@ const UserNavButtonsToggle = ({ show }) => {
 
 const NavbarComponent = ({ ...props }) => (
   <Navbar fluid className={props.className} fixedTop>
-    <Navbar.Header>
-      <Navbar.Brand>
-      </Navbar.Brand>
-      <Navbar.Toggle/>
-    </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
         <NavLinkRoute path="/" icon="home">{!props.affix ? ' Home' : false}</NavLinkRoute>
