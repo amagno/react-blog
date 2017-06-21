@@ -16,9 +16,9 @@ export default () => (
         <Well>
             <Euclides />
         </Well>
-        <h2 style={{ textAlign: 'center' }}>Código em JavaScript ES6</h2>
+        <h2 style={{ textAlign: 'center' }}>Código em JavaScript ES6  <a href="https://github.com/amagno/react-blog/blob/master/src/components/Euclides.js">Código Fonte</a></h2>
         <Image src={EuclidesImageJS} style={{ margin: '10px 100px' }}/>
-        <h2 style={{ textAlign: 'center' }}>Código em C</h2>
+        <h2 style={{ textAlign: 'center' }}>Código em C <a href="https://github.com/amagno/react-blog/blob/master/src/main.c">Código Fonte</a></h2>
         <Image src={EuclidesImageC} style={{ margin: '10px 100px' }}/>
         <h3 style={{ textAlign: 'center' }}>Execução</h3>        
         <Image src={EuclidesGif} style={{ margin: '10px 240px' }}/>
