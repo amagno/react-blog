@@ -83,3 +83,17 @@
 .navbar-affixed {
   padding: 0;
   transition: all 1s; }
+
+.form-euclides {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  padding: 10px; }
+
+.form-euclides .form-group {
+  width: 400px;
+  margin: 5px auto; }
+
+.form-euclides button {
+  margin-top: 10px;
+  width: 100%; }
